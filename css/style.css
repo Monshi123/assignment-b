@@ -245,6 +245,41 @@ header{
 .play-instantly-small img{
     width: 40%;
 }
+/* Games list section start */
+.games-list-container{
+    max-width: 1100px;
+    margin: 50px auto;
+    min-height: 200px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.games-list-containt{
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.games-logo-title{
+    width: 150px;
+    font-size: 12px;
+    font-weight: 600px;
+    color: #0B0223;
+}
+.games-logo-title:hover{
+    color: #F61C0D;
+}
+.games-list-containt:hover{
+    width: 200px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: #FFF;
+    border: 1px solid #F61C0D;
+}
 
 
 
@@ -305,5 +340,8 @@ header{
     }
     .play-instantly-container{
         gap: 50px;
+    }
+    .games-list-containt{
+        width: 150px;
     }
 }
