@@ -127,6 +127,7 @@ header{
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .banner-button2{
    padding: 10px 20px;
@@ -139,6 +140,7 @@ header{
     font-weight: 600; 
     text-transform: uppercase;
     margin-left: 20px;
+    cursor: pointer;
 }
 .banner-pic{
     width: 50%;
@@ -182,9 +184,11 @@ header{
     width: 100%;
     height: 380px;
     border-radius: 16px;
+    position: relative; 
 }
 .funny-videos-card img{
     width: 100%;
+    display: block;
 }
 .funny-videos-card-descripton{
     font-size: 16px;
@@ -193,8 +197,32 @@ header{
     color: #534C64;
     margin-top: 10px;
 }
-.funny-videos-card-container .seven:hover img{
-    background-color: blue;
+.image__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: ease-in-out;
+}
+.image__overlay:hover{
+    opacity: 1;
+}
+#image-icon{
+   font-size: 40px;
+    font-weight: bold;
+}
+.image__description{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #F61C0D;
 }
 /* play instantly start */
 .play-instantly{
