@@ -193,6 +193,9 @@ header{
     color: #534C64;
     margin-top: 10px;
 }
+.funny-videos-card-container .seven:hover img{
+    background-color: blue;
+}
 /* play instantly start */
 .play-instantly{
     background-color: #FFF;
@@ -366,7 +369,8 @@ footer{
     .banner-container, 
     .funny-videos-card-container, 
     .play-instantly-container, 
-    .footer-section{
+    .footer-section, 
+    .nav-container{
         width: 300px;
     }
     .footer-icon{
@@ -405,7 +409,33 @@ footer{
     .play-instantly-container{
         gap: 50px;
     }
+    .games-list-container{
+        width: 500px;
+    }
     .games-list-containt{
-        width: 150px;
+        width: 120px;
+    }
+}
+
+
+/* medium device responsive */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .nav-container, 
+    .banner-container, 
+    .funny-videos-card-container, 
+    .play-instantly-container, 
+    .games-list-container, 
+    .footer-section{
+        width: 700px;
+    }
+    .play-instantly-description{
+        margin-left: 0px;
+        width: 290px;
+        margin-top: 20px;
+    }
+    .footer-icon{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 50px;
     }
 }
