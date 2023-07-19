@@ -280,7 +280,65 @@ header{
     background-color: #FFF;
     border: 1px solid #F61C0D;
 }
-
+/* footer section */
+footer{
+    background-color: #0B0223;
+}
+.footer-section{
+    max-width: 1100px;
+    min-height: 400px;
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-title-1{
+    color: #FFF;
+}
+.footer-containt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+.footer-containt span{
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF;
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 40px;
+}
+.footer-icon i{
+    color: #FFF;
+    font-size: 30px;
+}
+.footer-privacy-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;   
+}
+.footer-privacy-text span{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.60);
+    margin-top: 40px;
+}
+.footer-copyraite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.60);
+    margin-top: 20px;
+}
 
 
 /* media query section */
@@ -290,7 +348,7 @@ header{
     .nav-item-container ul, 
     .nav-item-container, 
     .banner-container, 
-    .play-instantly-container{
+    .play-instantly-container {
         flex-direction: column;
     }
     .funny-videos-card-container{
@@ -307,8 +365,14 @@ header{
     }
     .banner-container, 
     .funny-videos-card-container, 
-    .play-instantly-container{
+    .play-instantly-container, 
+    .footer-section{
         width: 300px;
+    }
+    .footer-icon{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 50px;
     }
     .funny-videos-title{
         font-size: 30px;
